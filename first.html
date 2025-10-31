@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GyaanPath EduPortal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #e5e8eb;
+      color: #121bc6;
+    }
 
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1581090700227-1e8e1f6a1f4b?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #2980b9;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1c5980;
+    }
+
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+      .hero h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GyaanPath EduPortal</h1>
+    <p>Your Digital Path to Knowledge</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="course.html">Courses</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="certificate.html">Certificate</a>
+    <a href="login.html">Login</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Learn Anytime, Anywhere</h2>
+    <p>Explore high-quality courses, video lectures, and quizzes — all for free!</p>
+    <a href="course.html" class="btn">📘 Start Learning</a>
+  </section>
+
+  <section class="courses">
+    <div class="course-card">
+      <h3>HTML & CSS Basics</h3>
+      <p>Start your web design journey from scratch.</p>
+      <a href="course.html" class="btn">View Course</a>
+    </div>
+    <div class="course-card">
+      <h3>JavaScript Essentials</h3>
+      <p>Learn the fundamentals of JavaScript programming.</p>
+      <a href="#" class="btn">Coming Soon</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 GyaanPath EduPortal | Created by SUBHASH</p>
+  </footer>
+
+</body>
+</html>
